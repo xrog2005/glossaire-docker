@@ -1,0 +1,19 @@
+version: '2'
+services:
+  base:
+    image: node:10-buster
+    volumes:
+    - ./glossaire-api:/usr/src/service
+    - ./glossaire_api/node_modules:/usr/src/service/node_modules
+    working_dir: /usr/src/service
+
+  install:
+    extends:
+      service: base
+    command: bash -c "npm install"
+    
+
+  fix:
+    extends:
+      service: base
+    command: npm audit fix
