@@ -32,6 +32,10 @@ make fix
 
 ## Installation de glossaire-api
 
+`````
+git clone https://github.com/cdadt/glossaire-app.git
+`````
+
 ### Premiere installation
 
 **Les commandes make se font dans le repertoire racine (ou ce situe Makefile)**.
