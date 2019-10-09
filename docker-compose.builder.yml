@@ -4,7 +4,7 @@ services:
     image: node:10-buster
     volumes:
     - ./glossaire-app:/usr/src/service
-    - ./glossaire_app/node_modules/:/usr/src/service/node_modules
+    - ./glossaire-app/node_modules/:/usr/src/service/node_modules
     working_dir: /usr/src/service
 
   install:
